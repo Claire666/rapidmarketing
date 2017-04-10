@@ -1,0 +1,167 @@
+/*初始样式设置*/
+*{
+  margin:0px;
+  padding:0px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.top_nav{
+    width:100%;
+    height:50px;
+    background-color: #eee;
+    position:fixed;
+}
+.top_nav h1{
+    margin-left: 20px;
+}
+.left_nav{
+    width: 200px;
+    height:100%;
+    background-color: #eee;
+    position:fixed;
+    top: 50px;
+}
+.left_nav li{
+    width: 200px;
+    margin-left: 20px;
+}
+.left_nav li a span {
+    color: #000;
+}
+.nav_bar_level1{}
+.nav_bar_level2{}
+.nav_bar_level3{}
+.content{
+    float:right;
+    /*减号前后加空格*/
+    width:calc(100% - 200px);
+    padding-top: 50px;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: ".";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+.route{
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: small;
+    color: #8e8e8e;
+}
+.group_title{
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.group_title li{
+    width:120px;
+    height:50px;
+    float:left;
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.group_title li:hover{
+    color: deepskyblue;
+    border-bottom: 3px solid deepskyblue;
+}
+.group_title_active{}
+.group_page{}
+.group_content{
+    margin-left: 30px;
+    position: relative;
+}
+.step1{
+    padding-left: 40px;
+}
+.step1 ul {
+    margin: 20px 0;
+}
+.step1 li {
+    width: 150px;
+    height: 30px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    background-color: #eee;
+    box-shadow: 3px 3px 3px #ccc;
+    margin-right: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.step1 li:hover{
+    color: #ffffff;
+    background-color: #0099ff;
+}
+.step2{
+    padding-left: 40px;
+    padding-top:20px;
+    position:relative;
+}
+.step2 ul {
+    margin: 20px 0;
+}
+.step2 li{
+    float:left;
+    width: 150px;
+    height: 100px;
+    position:relative;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+.step2 .bag{
+    cursor: pointer;
+}
+.step2 .bag li span{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: #ffffff;
+}
+.fa-dot-circle-o{}
+.bag{}
+.box{
+    position:absolute;
+    width:300px;
+    height:200px;
+    text-align: center;
+    background-color:#ffffff;
+    box-shadow: 10px 10px 40px #b7eafc,
+    -10px -10px 40px #b7eafc;
+}
+.box .btn{
+    display: block;
+    width: 180px;
+    /*三个都居中*/
+    margin: 10px auto 0;
+    cursor:pointer;
+}
+.box>div{
+    position: relative;
+    padding-top: 25px;
+    text-align: center;
+}
+.box .btn_modal_close{
+    width: 20px;
+    height: 20px;
+    top:-3px;
+    right: 10px;
+    position: absolute;
+    cursor:pointer;
+}
+
